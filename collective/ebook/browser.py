@@ -496,7 +496,7 @@ class HelperView(object):
         # CGI-Escape
         url = cgi.escape(url)
 
-        parent.insert(index + 1, ' <span>(%s)</span>' % url)
+        parent.insert(index + 1, ' (%s)' % url)
 
     def submit(self, html=False, token=None, selNodes=None):
         authenticator = getMultiAdapter(
